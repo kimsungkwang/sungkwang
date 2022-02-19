@@ -1,2 +1,6 @@
-print("강한친구 대한육군")
-print("강한친구 대한육군")
+from unittest import result
+
+
+number = int(input())
+result = number - 543
+print(result)
