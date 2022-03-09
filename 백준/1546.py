@@ -6,5 +6,17 @@
 
 # 세준이의 성적을 위의 방법대로 새로 계산했을 때, 새로운 평균을 구하는 프로그램을 작성하시오.
 
-N = int(input())
-grade = list(map(int, input().split()))
+num = int(input())
+score = list(map(int, input().split()))
+max_score = max(score)
+sum = 0
+ 
+for i in range(num):
+    score[i] = score[i] / max_score * 100
+ 
+for i in range(num):
+    sum = sum + score[i]
+average = sum/num
+ 
+print(average)
+ 
